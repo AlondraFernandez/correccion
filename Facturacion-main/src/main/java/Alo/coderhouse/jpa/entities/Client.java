@@ -26,15 +26,15 @@ public class Client {
     private String id;
 
     @Column(name = "NAME", nullable = false)
-    @Schema(description = "First name of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "Maximiliano")
+    @Schema(description = "First name of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "Alondra")
     private String name;
 
     @Column(name = "LASTNAME", nullable = false)
-    @Schema(description = "Last name of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "Sastre")
+    @Schema(description = "Last name of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "Fernandez")
     private String lastName;
 
     @Column(name = "DOCNUMBER", nullable = false)
-    @Schema(description = "Document number of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "25145269")
+    @Schema(description = "Document number of the client", requiredMode = Schema.RequiredMode.REQUIRED, example = "45797350")
     private String docNumber;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
